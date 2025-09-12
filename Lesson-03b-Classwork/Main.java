@@ -8,10 +8,10 @@ class Main {
 
   void init(){
    
-    System.out.println("Tricia Zhang");
-    System.out.println("Tricia Zhang, 144-50 35th Ave Flushing NY 11354");
-    System.out.println("Tricia Zhang \n144-50 35th Ave Flushing NY 11354");
-    
+      System.out.println("Tricia Zhang");
+      System.out.println("Tricia Zhang"); System.out.println("144-50 35th Ave Flushing NY 11354");
+      System.out.println("Tricia Zhang \n144-50 35th Ave Flushing NY 11354");
+      
   }
 
   
