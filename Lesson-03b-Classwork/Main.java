@@ -10,9 +10,10 @@ class Main {
    
       System.out.println("Tricia Zhang");
       System.out.println("Tricia Zhang"); System.out.println("address");
-      System.out.println("Tricia Zhang \n address");
+      System.out.println("Tricia Zhang \naddress");
       
   }
 
   
+
 }
