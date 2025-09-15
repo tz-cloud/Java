@@ -11,9 +11,9 @@ class Main {
     2) number of people that live with you
     3) number of items in a cart 
 */
-  int stu_age = 16;
-  int live = 5;
-  int cart = 10;
+    int stu_age = 16;
+    int live = 5;
+    int cart = 10;
 
 /*  
     Challenge 2:
