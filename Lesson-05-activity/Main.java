@@ -13,11 +13,9 @@ class Main {
     calculated sum and then display it.
     
 */
-   int x = 1, y = 2;
-    sum 
-
-
-
+    int x = 1, y = 2;
+    int sum = x + y;
+    System.out.println(sum);
 /*  
     Challenge 2:
     Create three variables to assign three grades and Assign values to each grade. 
@@ -25,9 +23,9 @@ class Main {
     calculated sum and then display it.
     
 */
-
-
-
+    int g1 = 85, g2 = 90, g3 = 76;
+    int sum1 = g1 + g2 + g3;
+    System.out.println(sum1);
 /*  
     Challenge 3:
     Calculate the average from the three grades from challenge 2,
@@ -35,17 +33,17 @@ class Main {
     Declare and assign values to any new variables
     NOTE: Does it look correct, check with a calculator?
 */
-
-
-
+    int avg = (g1 + g2 + g3) / 3;
+    System.out.println(avg);
 /*  
     Challenge 4:
     Write the following equation in EQ1.PNG file in Java; store the result and the display it:
     Declare and assign values to any new variables
 
 */
-  
-
+    int A = 5, x1 = 3;
+    double y1 = (A)/(x1+1);
+    System.out.println(y1);
 /*  
     Challenge 5:
     Using the variables same variables from challenge4 above, write the following equation in EQ2.PNG file in Java, store the result and the display it:
@@ -53,12 +51,8 @@ class Main {
     Declare and assign values to any new variables
 
 */
- 
-
-
-
-
-
+    double y2 = (2*x1*(x1+1)*(-x1/2))/A;
+    System.out.println(y2);
 /*  
     Challenge 6:
     Create the variables and write the equation in
@@ -66,12 +60,9 @@ class Main {
 
     Declare and assign values to any new variables
 */
- 
-
-
-
-
-
+    int b = 10, h = 20;
+    double area = (1/2)*b*h;
+    System.out.println(area);
 /*  
     **** Bonus Challenge ****:
     Create a variable that stores the total number of eggs 
