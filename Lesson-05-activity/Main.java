@@ -61,7 +61,7 @@ class Main {
     Declare and assign values to any new variables
 */
     int b = 10, h = 20;
-    double area = (1/2)*b*h;
+    int area = (1/2)*b*h;
     System.out.println(area);
 /*  
     **** Bonus Challenge ****:
