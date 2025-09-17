@@ -42,7 +42,7 @@ class Main {
 
 */
     int A = 5, x1 = 3;
-    double y1 = (A)/(x1+1);
+    int y1 = (A)/(x1+1);
     System.out.println(y1);
 /*  
     Challenge 5:
@@ -51,7 +51,7 @@ class Main {
     Declare and assign values to any new variables
 
 */
-    double y2 = (2*x1*(x1+1)*(-x1/2))/A;
+    int y2 = (2*x1*(x1+1)*(-x1/2))/A;
     System.out.println(y2);
 /*  
     Challenge 6:
