@@ -33,7 +33,7 @@ class Main {
     Declare and assign values to any new variables
     NOTE: Does it look correct, check with a calculator?
 */
-    int avg = (g1 + g2 + g3) / 3;
+    double avg = (g1 + g2 + g3) / 3;
     System.out.println(avg);
 /*  
     Challenge 4:
@@ -42,7 +42,7 @@ class Main {
 
 */
     int A = 5, x1 = 3;
-    int y1 = (A)/(x1+1);
+    double y1 = (A)/(x1+1);
     System.out.println(y1);
 /*  
     Challenge 5:
@@ -51,7 +51,7 @@ class Main {
     Declare and assign values to any new variables
 
 */
-    int y2 = (2*x1*(x1+1)*(-x1/2))/A;
+    double y2 = (2*x1*(x1+1)*(-x1/2))/A;
     System.out.println(y2);
 /*  
     Challenge 6:
@@ -61,7 +61,7 @@ class Main {
     Declare and assign values to any new variables
 */
     int b = 10, h = 20;
-    int area = (1/2)*b*h;
+    double area = (1/2)*b*h;
     System.out.println(area);
 /*  
     **** Bonus Challenge ****:
