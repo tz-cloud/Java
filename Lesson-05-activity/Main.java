@@ -51,7 +51,7 @@ class Main {
     Declare and assign values to any new variables
 
 */
-    double y2 = (2*x1*(x1+1)*(-x1/2))/A;
+    double y2 = ((2*x1)*(x1+1)*(-x1/2))/A;
     System.out.println(y2);
 /*  
     Challenge 6:
