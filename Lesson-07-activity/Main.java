@@ -12,7 +12,7 @@ class Main {
   System.out.println("Enter x");
   double x = Input.readDouble();
   double y = Math.pow(x, 7);
-  System.out.println("#1 is " + y);
+  System.out.println(y);
 
 /*  
     Challenge 2:
@@ -21,7 +21,7 @@ class Main {
   System.out.println("Enter z");
   double z = Input.readDouble();
   double q = Math.pow(z, 3) + 5;
-  System.out.println("#2 is " + q);
+  System.out.println(q);
 
 /*  
     Challenge 3:
@@ -33,7 +33,7 @@ class Main {
   System.out.println("Enter t");
   double t = Input.readDouble();
   double s = Math.pow(t, 5)*Math.pow(r + 2, 4);
-  System.out.println("#3 is " + s);
+  System.out.println(s);
 /*  
     Challenge 4:
     Create the variables, ask the user for the variable values, write the equation in file EQ3-act6 and display the equation value..
@@ -44,7 +44,7 @@ class Main {
   System.out.println("Enter B");
   double B = Input.readDouble();
   double C = Math.sqrt(A + B);
-  System.out.println("#4 is " + C);
+  System.out.println(C);
 /*  
     Challenge 5:
     Create the variables, ask the user for the variable values, write the equation in file EQ4-act6 and display the equation value..
@@ -59,7 +59,7 @@ class Main {
   System.out.println("Enter y2");
   double y2 = Input.readDouble();
   double d = Math.sqrt(Math.pow(x2-x1, 2)+Math.pow(y2-y1, 2));
-  System.out.println("#5 is " + d);
+  System.out.println(d);
 /*  
     Challenge 6:
     Create the variables, ask the user for the variable values, write the equation g=sin(deg) and display the equation value..
@@ -68,7 +68,7 @@ class Main {
   System.out.println("Enter degree");
   double degree = Input.readDouble();
   double g = Math.sin(degree);
-  System.out.println("#6 is " + g);
+  System.out.println(g);
 /*  
     Challenge 7:
     Create the variables, ask the user for the variable values, write the equation in file EQ5-act6 and display the equation value.
@@ -79,7 +79,7 @@ class Main {
   System.out.println("Enter n");
   double n = Input.readDouble();
   double k = Math.pow(m, 6) / Math.sqrt(n + 1);
-  System.out.println("#7 is " + k);
+  System.out.println(k);
 /*  
     *** Bonus Challenge ***:
     Create the variables, ask the user for the variable values, write the equation in file Ch-act6 and display the equation value.
