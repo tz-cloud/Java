@@ -8,8 +8,14 @@ class Main {
 		System.out.println(word);
 	}
 
+	double FtoC(double f){
+		double c = (f-32)*9.0/5;
+		return c;
+	}
+
 	void init(){
 		print("Hello");
+		FtoC(32);
   }
 
 
