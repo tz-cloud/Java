@@ -4,17 +4,13 @@ class Main {
     	(new Main()).init();
 	}
 
-  void init(){
-
-  }
-  
-  void type(String type){
-    System.out.println("type smth..");
-  }
-
-  String print(String type){
-		return type;
+	void print(String word){
+		System.out.println(word);
 	}
+
+	void init(){
+		print("Hello");
+  }
 
 
 
