@@ -34,6 +34,7 @@ class Main {
 	}
 	//testing
 	void init(){
+		print("Hello");
 		FtoC(32);
 		sphereVolume(1);
 		coneVolume(2, 3);
