@@ -35,9 +35,9 @@ class Main {
 	//testing
 	void init(){
 		print("Hello");
-		FtoC(32);
-		sphereVolume(1);
-		coneVolume(2, 3);
+		System.out.println(FtoC(32));
+		System.out.println(sphereVolume(1));
+		System.out.println(coneVolume(2, 3));
 		distance(1, 1, 1, 1);
   }
 
