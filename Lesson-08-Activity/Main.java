@@ -11,7 +11,7 @@ class Main {
 
 	//2
 	double FtoC(double f){
-		double c = (f-32)*9.0/5;
+		double c = (f-32)*(9.0/5);
 		return c;
 	}
 
@@ -38,7 +38,7 @@ class Main {
 		System.out.println(FtoC(32));
 		System.out.println(sphereVolume(1));
 		System.out.println(coneVolume(2, 3));
-		distance(1, 1, 1, 1);
+		distance(1.0, 1.0, 1.4, 1.4);
   }
 
 
