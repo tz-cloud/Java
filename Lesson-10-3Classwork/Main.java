@@ -47,7 +47,7 @@ class Main {
         Otherwise: $0 savings.
     */
    double groceryDiscount(double total, int cans){
-    if(100<= total <= 200 && cans == 3){
+    if((100 <= total && total <= 200) && cans == 3){
       double amount = (total + cans) - 10;
       return amount;
     }else if(total > 200 && cans > 4){
