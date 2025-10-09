@@ -33,7 +33,7 @@ class Main {
 		System.out.println(BMI(90, 63)); //return 15.9 = Underweight
 
 		//Problem 4 
-		shippingCost(12); //return 10.00
+		System.out.println(shippingCost(12)); //return 10.00
 
 		//Problem 
 		System.out.println(blueorViolet(650)); //return true
