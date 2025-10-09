@@ -6,11 +6,44 @@ class Main {
 	}
 
 	void init(){
-		gpa(80); //return 80
-		gpa(91); //return 100.1
-		isGraduating(12, 44); //return true
-		isGraduating(12, 30); //return false
-		isGraduating(10, 44); //return false
+		//Problem 1
+		System.out.println(gpa(80)); //return 80
+		System.out.println(gpa(91)); //return 100.1
+
+		//Problem 2
+			if(isGraduating(12, 44)){
+				System.out.println("Student is Graduating");
+			}else 
+				System.out.println("Student is not graduating");
+			//return true
+
+			if(isGraduating(12, 30)){
+				System.out.println("Student is Graduating");
+			}else 
+				System.out.println("Student is not graduating");
+			//return false
+
+			if(isGraduating(10, 44)){
+				System.out.println("Student is Graduating");
+			}else 
+				System.out.println("Student is not graduating");
+			//return false
+
+		//Problem 3
+		System.out.println(BMI(90, 63)); //return 15.9 = Underweight
+
+		//Problem 4 
+		shippingCost(12); //return 10.00
+
+		//Problem 5
+		if(blueorViolet(650)){
+				System.out.println("true");
+			}else 
+				System.out.println("false");
+			//return false
+
+		System.out.println(blueorViolet(650)); //return true
+		System.out.println(blueorViolet(720)); //return true
   	}
 
 	double gpa(double gpa){
@@ -37,21 +70,28 @@ class Main {
 			return "Normal";
 		}else if(bmi >= 25 && bmi <= 39.9){
 			return "Overweight";
-		}else if(bmi >= 40.0){
+		}else{
 			return "Obese";
 		}
 	}
 
 	double shippingCost(double weight){
-		if( weight <= 10 ){
+		if( weight <= 10.0 ){
 			return 0.00;
-		}else if( weight > 10 && weight <= 15 ){
+		}else if( weight > 10.0 && weight <= 15.0 ){
 			return 5.00;
-		}else if( weight > 15 && <= 25 ){
+		}else if( weight > 15.0 && weight <= 25.0 ){
 			return 10.00;
 		}else{
 			return 10.00 + ((weight/25)*.02);
 		}
 	}
-  
+
+	boolean blueorViolet(int lightFrequency){
+		if((lightFrequency >= 600 && lightFrequency <= 670) || (lightFrequency >= 700 && lightFrequency <= 750)){
+			return true;
+		}else{
+			return false;
+		}
+	}
 }
