@@ -35,13 +35,7 @@ class Main {
 		//Problem 4 
 		shippingCost(12); //return 10.00
 
-		//Problem 5
-		if(blueorViolet(650)){
-				System.out.println("true");
-			}else 
-				System.out.println("false");
-			//return false
-
+		//Problem 
 		System.out.println(blueorViolet(650)); //return true
 		System.out.println(blueorViolet(720)); //return true
   	}
