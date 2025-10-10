@@ -4,13 +4,13 @@ class Main {
   }
 
   void init(){
-    groupSavings(1);
-    groupSavings(9);
-    groupSavings(17);
+    System.out.println(groupSavings(1));
+    System.out.println(groupSavings(9));
+    System.out.println(groupSavings(17));
     
-    groceryDiscount(100, 3);
-    groceryDiscount(200, 5);
-    groceryDiscount(100, 1);
+    System.out.println(groceryDiscount(100, 3));
+    System.out.println(groceryDiscount(200, 5));
+    System.out.println(groceryDiscount(100, 1));
   }
 
     /*
