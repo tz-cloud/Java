@@ -35,7 +35,9 @@ class Main {
 		//Problem 4 
 		System.out.println(shippingCost(12)); //return 10.00
 
-		//Problem 
+		//Problem 5
+		System.out.println(blueorViolet(650)); //return true
+		System.out.println(blueorViolet(780)); //return false
   	}
 
 	double gpa(double gpa){
