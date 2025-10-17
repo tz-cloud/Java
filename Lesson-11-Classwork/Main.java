@@ -12,8 +12,7 @@ class Main {
   String splitReverse(String word){
     int mid = word.length()/2;
     if(mid == 0){
-      int space = word.indexOf(" ");
-      return word.substring(space + 1) + word.substring(0, space);
+      return "Error, odd amount of letters found";
     }else{
       return word.substring(mid) + word.substring(0,mid);
     }
