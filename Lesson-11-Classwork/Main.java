@@ -11,8 +11,12 @@ class Main {
 
   String splitReverse(String word){
     int mid = word.length()/2;
-    int pos = word.indexOf(" ");
-    return word.substring(0, pos) + word.substring(pos+1);
+    if(mid == 0){
+      int space = word.indexOf(" ");
+      return word.substring(space + 1) + word.substring(0, space);
+    }else{
+      return word.substring(mid) + word.substring(0,mid);
+    }
   }
 
   String createUsername(String first, String last, String osis){
