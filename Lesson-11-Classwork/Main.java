@@ -10,8 +10,8 @@ class Main {
   }
 
   String splitReverse(String word){
-    int middle = word.length()/2;
-    return word.substring(middle) + word.substring(0,middle);
+    int mid = word.length()/2;
+    return word.substring(mid) + word.substring(0,mid);
   }
 
   String createUsername(String first, String last, String osis){
