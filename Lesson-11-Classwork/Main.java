@@ -26,6 +26,7 @@ class Main {
     System.out.println(getUsername("georgea@gmail.com"));
     
     System.out.println(splitReverse("Pizza Monday"));
+    System.out.println(splitReverse("Happy Birthday"));
     System.out.println(splitReverse("watermelon"));
 
     System.out.println(createUsername("Harry","Lim","123456789"));
