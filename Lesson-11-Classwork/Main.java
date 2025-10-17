@@ -3,24 +3,29 @@ class Main {
   public static void main(String[] args) {
     (new Main()).init();
   }
-  
-  void print(Object o){ System.out.println(o);}
-  void printt(Object o){ System.out.print(o);}
 
   String getUsername(String email){
-    return email;
+    int pos = email.indexOf("@");
+    return email.substring(0,pos);
   }
 
-  String spiltReverse(String word){
-    return word;
+  String splitReverse(String word){
+    int middle = word.length()/2;
+    return word.substring(middle) + word.substring(0,middle);
   }
 
-  String createUsername(String first, String second, int osis{
-    char l = 
+  String createUsername(String first, String last, String osis){
+    return first.substring(0,1)+last+osis.substring(osis.length()-4);
   }
 
   void init(){
-   
+    System.out.println(getUsername("georgea@gmail.com"));
+    
+    System.out.println(splitReverse("Happy Birthday"));
+    System.out.println(splitReverse("watermelon"));
+
+    System.out.println(createUsername("Harry","Lim","123456789"));
+    System.out.println(createUsername("Jane","Huang","102030405"));
 
     
   }
