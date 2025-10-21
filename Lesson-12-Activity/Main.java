@@ -5,7 +5,7 @@ class Main {
   }
 
   String creditCardType(String num){
-    if(num.substring(0).equals("4")){
+    if(num.substring(0,1).equals("4")){
       return "Visa";
     }else if(num.substring(0,2).equals("34")||num.substring(0,2).equals("37")){
       return "America Express";
