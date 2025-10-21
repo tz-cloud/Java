@@ -20,7 +20,13 @@ class Main {
     }
   }
 
+  String pigLatin(String word){
+    String first = word.substring(0,1);
+    return word.substring(1) + first + "ay";
+  }
+
   void init(){
+    //Problem 1
     System.out.println(creditCardType("4147201234567890"));
     //Visa
     System.out.println(creditCardType("378282246310005"));
@@ -31,7 +37,12 @@ class Main {
     //Mastercard
     System.out.println(creditCardType("6011555555555555"));
     //Discovery
-
+  
+    //Problem 2
+    System.out.println(pigLatin("pig"));
+    //ipgay
+    System.out.println(pigLatin("happy"));
+    //yhappay
   }
 
   
