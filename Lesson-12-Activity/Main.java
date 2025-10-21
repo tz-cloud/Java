@@ -54,6 +54,8 @@ class Main {
     //Mastercard
     System.out.println(creditCardType("6011555555555555"));
     //Discovery
+    System.out.println(creditCardType("1234567891011121"));
+    //idk wot card u got
   
     //Problem 2
     System.out.println(pigLatin("pig"));
