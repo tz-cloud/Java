@@ -13,29 +13,31 @@ class Main {
   }
 
   String getCounselor(String offClass){
-    if(offClass.substring(1).equals("B") || offClass.substring(0).equals("B")){
+    String first = offClass.substring(0); 
+    String mid = offClass.substring(1);
+    if(first.equals("B") || mid.equals("B")){
       return "Berrouet";
-    }else if(offClass.substring(1).equals("C") || offClass.substring(0).equals("C")){
+    }else if(first.equals("C") || mid.equals("C")){
       return "Chu";
-    }else if(offClass.substring(1).equals("D") || offClass.substring(0).equals("D")){
+    }else if(first.equals("D") || mid.equals("D")){
       return "Dinn";
-    }else if(offClass.substring(1).equals("E") || offClass.substring(0).equals("E")){
+    }else if(first.equals("E") || mid.equals("E")){
       return "Eyzengart";
-    }else if(offClass.substring(1).equals("F") || offClass.substring(0).equals("F")){
+    }else if(first.equals("F") || mid.equals("F")){
       return "Flores";
-    }else if(offClass.substring(1).equals("G") || offClass.substring(0).equals("G")){
+    }else if(first.equals("G") || mid.equals("G")){
       return "Gibson";
-    }else if(offClass.substring(1).equals("L") || offClass.substring(0).equals("L")){
+    }else if(first.equals("L") || mid.equals("L")){
       return "Shim Lee";
-    }else if(offClass.substring(1).equals("M") || offClass.substring(0).equals("M")){
+    }else if(first.equals("M") || mid.equals("M")){
       return "Meltzer";
-    }else if(offClass.substring(1).equals("P") || offClass.substring(0).equals("P")){
+    }else if(first.equals("P") || mid.equals("P")){
       return "Paccione";
-    }else if(offClass.substring(1).equals("S") || offClass.substring(0).equals("S")){
+    }else if(first.equals("S") || mid.equals("S")){
       return "Fiore";
-    }else if(offClass.substring(1).equals("T") || offClass.substring(0).equals("T")){
+    }else if(first.equals("T") || mid.equals("T")){
       return "Tsai";
-    }else if(offClass.substring(1).equals("Z") || offClass.substring(0).equals("Z")){
+    }else if(first.equals("Z") || mid.equals("Z")){
       return "Zayes";
     }else{
       return "Error: No Counselor Found";
@@ -44,7 +46,7 @@ class Main {
 
   String imageType(String file_name){
     int pos = file_name.lastIndexOf(".");
-    String type = file_name.substring(pos);
+    String type = file_name.substring(pos+1);
     if(type.equalsIgnoreCase("jpeg")||type.equalsIgnoreCase("jpg")){
       return "Joint Photographic Experts Group";
     }else if(type.equalsIgnoreCase("png")){
