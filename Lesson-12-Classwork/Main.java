@@ -13,8 +13,8 @@ class Main {
   }
 
   String getCounselor(String offClass){
-    String first = offClass.substring(0); 
-    String mid = offClass.substring(1);
+    String first = offClass.substring(0,1); 
+    String mid = offClass.substring(1,2);
     if(first.equals("B") || mid.equals("B")){
       return "Berrouet";
     }else if(first.equals("C") || mid.equals("C")){
