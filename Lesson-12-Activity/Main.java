@@ -72,6 +72,8 @@ class Main {
     //Brooklyn
     System.out.println(nycLocate("11361"));
     //Queens
+    System.out.println(nycLocate("12345"));
+    //idk where u live
   }
 
   
