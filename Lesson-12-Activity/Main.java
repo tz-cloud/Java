@@ -13,8 +13,10 @@ class Main {
       return "Diner Club";
     }else if(num.substring(0,2).equals("51")||num.substring(0,2).equals("55")){
       return "Mastercard";
-    }else{
+    }else if(num.substring(0,4).equals("6011")||num.substring(0,2).equals("65")){
       return "Discovery";
+    }else{
+      return "idk wot card u got";
     }
   }
 
