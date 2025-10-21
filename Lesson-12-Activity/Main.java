@@ -25,6 +25,23 @@ class Main {
     return word.substring(1) + first + "ay";
   }
 
+  String nycLocate(String zip){
+    String locate = zip.substring(0,3);
+    if(locate.equals("100") || locate.equals("101") || locate.equals("102")){
+      return "Manhattan";
+    }else if(locate.equals("103")){
+      return "Staten Island";
+    }else if(locate.equals("104")){
+      return "Bronx";
+    }else if(locate.equals("112")){
+      return "Brooklyn";
+    }else if(locate.equals("113") || locate.equals("114") || locate.equals("111")){
+      return "Queens";
+    }else{
+      return "idk where u live";
+    }
+  }
+
   void init(){
     //Problem 1
     System.out.println(creditCardType("4147201234567890"));
@@ -43,6 +60,18 @@ class Main {
     //ipgay
     System.out.println(pigLatin("happy"));
     //yhappay
+
+    //Problem 3
+    System.out.println(nycLocate("10003"));
+    //Manhattan
+    System.out.println(nycLocate("10367"));
+    //Staten Island
+    System.out.println(nycLocate("10402"));
+    //Bronx
+    System.out.println(nycLocate("11274"));
+    //Brooklyn
+    System.out.println(nycLocate("11361"));
+    //Queens
   }
 
   
