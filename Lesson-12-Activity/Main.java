@@ -42,6 +42,46 @@ class Main {
     }
   }
 
+  String getMonth(String date){
+    int pos = date.indexOf("/");
+    String month = date.substring(0, pos);
+    if(month.equalsIgnoreCase("01")){
+      return "January";
+    }else if(month.equalsIgnoreCase("02")){
+      return "February";
+    }else if(month.equalsIgnoreCase("03")){
+      return "March";
+    }else if(month.equalsIgnoreCase("04")){
+      return "April";
+    }else if(month.equalsIgnoreCase("05")){
+      return "May";
+    }else if(month.equalsIgnoreCase("06")){
+      return "June";
+    }else if(month.equalsIgnoreCase("07")){
+      return "July";
+    }else if(month.equalsIgnoreCase("08")){
+      return "August";
+    }else if(month.equalsIgnoreCase("09")){
+      return "September";
+    }else if(month.equalsIgnoreCase("10")){
+      return "October";
+    }else if(month.equalsIgnoreCase("11")){
+      return "November";
+    }else if(month.equalsIgnoreCase("12")){
+      return "December";
+    }else{
+      return "Error";
+    }
+
+  boolean validatePswd(String password){
+    int len = password.length();
+    if((len <= 5 && len >= 8) && password.indexOf("^") == -1 && password.indexOf("*") == -1 && password.indexOf("(") == -1 && password.indexOf(")") == -1){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
   void init(){
     //Problem 1
     System.out.println(creditCardType("4147201234567890"));
