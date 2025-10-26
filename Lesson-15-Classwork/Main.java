@@ -13,7 +13,7 @@ class Main {
   }
 
   void init(){
-    print(5);
+    print(approxPI(5));
 
   }
 
