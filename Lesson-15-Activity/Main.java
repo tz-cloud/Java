@@ -25,6 +25,20 @@ class Main {
     return sum;
   }
 
+  //Problem 3
+  double sine(int N, int deg){
+    double sum = 0;
+    for(int x=0; x<=N; x+=2){
+      sum += deg - (Math.pow(deg,3+N)/3+N);
+    }
+    return sum;
+  }
+
+  //Problem 4
+  int fib(int N){
+    char first = 
+  }
+
   void init(){
     System.out.println(spaces(3)+"DONE");
     System.out.println(spaces(5)+"DONE");
