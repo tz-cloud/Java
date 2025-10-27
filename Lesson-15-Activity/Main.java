@@ -8,14 +8,16 @@ class Main {
   void printt(Object o){ System.out.print(o);}
 
   String spaces(int N){
+    String result = "";
     for(int x=0; x<=N; x++){
-      String space =" ";
-      System.out.println(space);
+      result += " ";
     } 
+    return result;
   }
 
   void init(){
     System.out.println(spaces(3)+"DONE");
+    System.out.println(spaces(5)+"DONE");
     
     
   }
