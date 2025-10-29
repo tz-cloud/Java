@@ -8,7 +8,7 @@ class Main {
   double approxPI(int N){
     double approx = 0;
     for(int x=1;x<=N;x+=2){
-      approx += 4*(1-(1/(N+2)));
+      approx += 4*(1-(1/-(x+2)));
     }
     return approx;
   }
