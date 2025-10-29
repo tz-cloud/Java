@@ -4,6 +4,7 @@ class Main {
     (new Main()).init();
   }
   
+  //Function for print()
   void print(Object o){ System.out.println(o);}
   void printt(Object o){ System.out.print(o);}
 

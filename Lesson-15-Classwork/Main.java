@@ -6,10 +6,11 @@ class Main {
   void printt(Object o){ System.out.print(o);}
 
   double approxPI(int N){
-    for(int x=N;x<=N;x++){
-      double approx = N*(1-1/3+1/5-1/7+1/9);
-      return approx;
+    double approx = 0;
+    for(int x=1;x<=N;x+=2){
+      approx += 4*(1-1/N+2);
     }
+    return approx;
   }
 
   void init(){
