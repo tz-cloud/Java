@@ -7,13 +7,13 @@ class Main {
 
   double approxPI(int N){
     double approx = 0;
-    for(int x=1;x<=N;x+=2){
+    for(int x=1;x<=N;x++){
       double term = 1 / (2 * x + 1); 
-      if (x % 2 == 0){
-        approx += term;  //add
-      }else{
-        approx -= term;  //subtract
-      }
+        if (x % 2 == 0){
+          approx += term;  //add
+        }else{
+          approx -= term;  //subtract
+        }
       }
       return 4*approx;
     }
