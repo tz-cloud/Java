@@ -21,22 +21,26 @@ class Main {
   }
 
   //PROBLEM 1
-  String swapLetter(String s, char replace){
+  String swapLetter(String s, char swap, char replace){
     String bld="";
     for(int x = 0; x < s.length(); x++){
-
+      if(s.substring(x, x+1).equals("swap")){
+        
+      }
     }
-    return bld="";
+    return bld;
   }
 
   //PROBLEM 2
   String encryption2(String s){
     String bld="";
+    return bld;
   }
 
   //PROBLEM 3
   String encryption3(String s){
     String bld="";
+    return bld;
   }
 
 }
