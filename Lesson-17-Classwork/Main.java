@@ -25,7 +25,7 @@ class Main {
     String bld="";
     for(int x = 0; x < s.length(); x++){
       if(s.substring(x, x+1).equals("swap")){
-        
+        swap = replace;
       }
     }
     return bld;
