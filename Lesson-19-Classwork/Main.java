@@ -9,13 +9,26 @@ class Main {
 
    //PROBLEM 1
    System.out.println(addNums());
+
+   //PROBLEM 2
+   System.out.println(generatePin());
   }
 
   //PROBLEM 1
   int addNums(){
-    int n1 = ((int)(Math.random()*55)-5);
-    int n2 = ((int)(Math.random()*55)-5);
+    int n1 = ((int)(Math.random()*60)-5);
+    int n2 = ((int)(Math.random()*60)-5);
     int sum = n1 + n2;
     return sum;
+  }
+
+  //PROBLEM 2
+  int generatePin(){
+    int d1 = ((int)(Math.random()*5)+3);
+    int d2 = ((int)(Math.random()*5)+3);
+    int d3 = ((int)(Math.random()*5)+3);
+    int d4 = ((int)(Math.random()*5)+3);
+    int pin = d1 + d2 + d3 + d4;
+    return pin;
   }
 }
