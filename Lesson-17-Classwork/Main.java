@@ -48,7 +48,7 @@ class Main {
   String encryption3(String text){
     String bld = "";
     for(int x = 0; x < text.length(); x++){
-      int last = text.length()-x;
+      int last = x+x;
       bld += text.substring(x,last);
     }
     return bld;
