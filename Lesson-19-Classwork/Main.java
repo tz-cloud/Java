@@ -23,12 +23,12 @@ class Main {
   }
 
   //PROBLEM 2
-  int generatePin(){
+  String generatePin(){
     int d1 = ((int)(Math.random()*5)+3);
     int d2 = ((int)(Math.random()*5)+3);
     int d3 = ((int)(Math.random()*5)+3);
     int d4 = ((int)(Math.random()*5)+3);
-    int pin = d1 + d2 + d3 + d4;
-    return pin;
+    return d1 + " " + d2 + " " + d3 + " " + d4;
   }
 }
+
