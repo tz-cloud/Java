@@ -28,10 +28,9 @@ class Main {
 
   //PROBLEM 4
   String additionTutor(){
-    String equation = " ";
     int num1 = (int)(Math.random()*(100)+1);
     int num2 = (int)(Math.random()*(100)+1);
-    equation = num1 + " " + "+" + " " + num2;
+    String equation = num1 + " " + "+" + " " + num2;
     System.out.println(equation);
     System.out.println("What is the sum?");
     int user = Input.readInt();
