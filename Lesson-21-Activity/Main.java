@@ -17,20 +17,31 @@ class Main {
     return "It would take " + days + " to reach $5.";
   }
 
-  int addTwoNumbers(){
+  void addTwoNumbers(){
     int num1 = randInt(1,100);
     int num2 = randInt(1,100);
-    int equ = num1 + num2;
-    System.out.println(equ + "=?");
+    int sum = num1 + num2;
+    int score = 0;
+    System.out.println(num1 + " + " + num2 + " = ?");
     int guess = Input.readInt();
-    while()
+    while(!(guess==sum)){
+      score++;
+      if(score == 1){
+        System.out.println("Incorrect");
+      }else{
+        System.out.println("Correct!");
+      }
+    }
+  }
 
-
+  int GCF(int num1, int num2){
+    int count = 0;  
 
   }
 
   void init(){
     allowance();
+    addTwoNumbers();
   }
 
 
