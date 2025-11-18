@@ -9,24 +9,23 @@ class Main {
 
   String allowance(){
     int days = 0;
-    double penny = 0.01;
-    double amount = penny*2;
-    while(!(amount==5)){
+    double amount = 0.01;
+    while(amount<=5){
+      amount *= 2;
       days++;
     }
-    return "It would take " + days + " to reach $5.";
+    return "It would take " + days + " to surpass $5.";
   }
 
   void addTwoNumbers(){
     int num1 = randInt(1,100);
     int num2 = randInt(1,100);
     int sum = num1 + num2;
-    int score = 0;
     System.out.println(num1 + " + " + num2 + " = ?");
-    int guess = Input.readInt();
+    int guess = -1;
     while(!(guess==sum)){
-      score++;
-      if(score == 1){
+      guess = Input.readInt();
+      if(guess != sum){
         System.out.println("Incorrect");
       }else{
         System.out.println("Correct!");
@@ -36,6 +35,16 @@ class Main {
 
   int GCF(int num1, int num2){
     int count = 0;  
+    int gcf = //couldnt find the formula
+    while(num2 != 0){
+      int c = num2;
+      num2 = num1 % num2;
+      num1 = c;
+    }
+    return gcf;
+  }
+
+  String menu(){
 
   }
 
