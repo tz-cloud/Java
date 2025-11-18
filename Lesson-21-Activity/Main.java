@@ -35,11 +35,12 @@ class Main {
 
   int GCF(int num1, int num2){
     int count = 0;  
-    int gcf = //couldnt find the formula
-    while(num2 != 0){
+    int gcf = 0;
+    while(!(num2==0)){
       int c = num2;
       num2 = num1 % num2;
       num1 = c;
+      gcf++;
     }
     return gcf;
   }
@@ -51,6 +52,7 @@ class Main {
   void init(){
     allowance();
     addTwoNumbers();
+    GCF(1, 3);
   }
 
 
