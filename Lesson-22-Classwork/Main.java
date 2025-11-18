@@ -7,8 +7,8 @@ class Main {
   
   void init(){
     String[] friends = {"Ashley","Emma","Kim","Brian","Leon"};
-    double[] c = {0, 12, 30};
-    System.out.println(convert(c));
+    double[] c = {-4, 0, 12, 30};
+    double[] tempf = convert(c);
   }
 
   double[] convert(double[] c){
