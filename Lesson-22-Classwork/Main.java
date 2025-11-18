@@ -6,8 +6,9 @@ class Main {
   void printt(Object o){ System.out.print(o);}
   
   void init(){
-   
-    
+    String[] friends = {"Ashley","Emma","Kim","Brian","Leon"};
+    double[] c = {0, 12, 30};
+    System.out.println(convert(c));
   }
 
   double[] convert(double[] c){
