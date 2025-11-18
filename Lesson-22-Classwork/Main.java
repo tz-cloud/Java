@@ -9,6 +9,10 @@ class Main {
     String[] friends = {"Ashley","Emma","Kim","Brian","Leon"};
     double[] c = {-4, 0, 12, 30};
     double[] tempf = convert(c);
+    for(int i=0; i < tempf.length; i++){
+      print(tempf[i]);
+    }
+    
   }
 
   double[] convert(double[] c){
