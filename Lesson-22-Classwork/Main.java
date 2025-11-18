@@ -12,10 +12,11 @@ class Main {
   }
 
   double[] convert(double[] c){
+    double[] f = new double[c.length];
     for(int i=0; i < c.length; i++){
-      c[i] = celsiusToFarhenheit(c[i]);
+      f[i] = celsiusToFarhenheit(c[i]);
     }
-    return c;
+    return f;
   }
 
   double celsiusToFarhenheit(double c){
