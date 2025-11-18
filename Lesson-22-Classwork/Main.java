@@ -7,8 +7,7 @@ class Main {
   
   void init(){
    
-    String[] friends = {"Ashley","Emma","Kim","Brian","Leon"};
-    double[] c = {0, 12, 30};
+    
   }
 
   double[] convert(double[] c){
