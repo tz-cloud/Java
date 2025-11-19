@@ -22,10 +22,10 @@ class Main {
   //Problem 1:
   // Write a function called sumArray that accepts an array of integers and
   // returns the sum of all the values in the array.
-  int[] sumArray(int[] num){
-    int[] sum = new int[num.length];
+  double sumArray(int[] num){
+    int sum = 0;
     for(int i = 0; i < num.length; i++){
-      sum[i] =+ num[i];
+      sum =+ num[i];
     }
     return sum;
   }
