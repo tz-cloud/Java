@@ -12,7 +12,6 @@ class Main {
     for(int i=0; i < tempf.length; i++){
       print(tempf[i]);
     }
-    
   }
 
   double[] convert(double[] c){
