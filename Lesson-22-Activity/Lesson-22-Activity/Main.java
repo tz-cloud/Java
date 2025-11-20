@@ -23,7 +23,7 @@ class Main {
   // Write a function called sumArray that accepts an array of integers and
   // returns the sum of all the values in the array.
   double sumArray(int[] num){
-    int sum = 0;
+    double sum = 0;
     for(int i = 0; i < num.length; i++){
       sum =+ num[i];
     }
