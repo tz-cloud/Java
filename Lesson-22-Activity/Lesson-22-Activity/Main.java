@@ -52,7 +52,7 @@ class Main {
   // the number of questions.
 
   String quizGrader(char[]student, char[]ans){
-    int correct = 0;
+    double correct = 0;
     for(int i = 0; i < ans.length; i++){
       if(student[i] == ans[i]){
         correct ++;
