@@ -61,7 +61,7 @@ class Main {
       }
     }
     double grade = (correct/ans.length)*100;
-    return "Quiz grade is " + grade;
+    return "Quiz grade is " + (int)grade;
 
   }
 
