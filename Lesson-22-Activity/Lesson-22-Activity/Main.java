@@ -22,7 +22,7 @@ class Main {
   //Problem 1:
   // Write a function called sumArray that accepts an array of integers and
   // returns the sum of all the values in the array.
-  int sumArray(int[] num){
+  double sumArray(int[] num){
     int sum = 0;
     for(int i = 0; i < num.length; i++){
       sum =+ num[i];
@@ -35,10 +35,12 @@ class Main {
   // returns the average of the values in the array
 
   double avgArray(int[]num){
-    int sum = 0;
+    double sum = 0;
     for(int i = 0; i < num.length; i++){
       sum += num[i];
     }
+    //can replace sum with sumArray(num.length) instead of everything about
+    //it would be return (double) sumArray(num/num.length) (avoid int division)
     double avg = sum/num.length;
     return avg;
     }
