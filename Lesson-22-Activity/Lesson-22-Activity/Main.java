@@ -58,7 +58,7 @@ class Main {
         correct ++;
       }
     }
-    double grade = (correct/ans.length)*100.0;
+    double grade = (correct/ans.length)*100;
     return "Quiz grade is " + grade;
 
   }
