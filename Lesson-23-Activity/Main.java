@@ -24,6 +24,7 @@ class Main {
       }
     
   }
+  }
 
   void init(){
     double[] price = {2.50, 8.99, 3.99, 10.25};
