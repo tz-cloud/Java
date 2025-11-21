@@ -15,16 +15,14 @@ class Main {
     return sum*1.08525;
   }
 
-  String isin(int[]array, int num){
-    String result = "";
+  boolean isin(int[]array, int num){
     for(int i = 0; i < array.length; i++){
       if(array[i] == num){
-        result = "true";
+        return true;
       }else{
-        result = "false";
+        return false;
       }
-    }
-    return result;
+    
   }
 
   void init(){
@@ -39,7 +37,7 @@ class Main {
   int checkLotto(int[]picks, int[]drawn){
     int check = 0;
     for(int i = 0; i < picks.length; i++){
-      if(isin(picks[i], drawn[i])){
+      if(isin(picks, drawn[i])){
         check++;
       }
     }
