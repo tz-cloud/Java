@@ -15,13 +15,36 @@ class Main {
     return sum*1.08525;
   }
 
+  String isin(int[]array, int num){
+    String result = "";
+    for(int i = 0; i < array.length; i++){
+      if(array[i] == num){
+        result = "true";
+      }else{
+        result = "false";
+      }
+    }
+    return result;
+  }
+
   void init(){
-    double[] price = {2, 8, 3.99, 10};
-    print(total(price));
+    double[] price = {2.50, 8.99, 3.99, 10.25};
+    print(total(price)); //$27.92
+
+    int[]test={1,2,3,4,5,6,7,8};
+    print(isin(test, 1)); //true
 
   }
 
-
+  int checkLotto(int[]picks, int[]drawn){
+    int check = 0;
+    for(int i = 0; i < picks.length; i++){
+      if(isin(picks[i], drawn[i])){
+        check++;
+      }
+    }
+    return check;
+  }
 
   // Use these functions below for the activity
 
