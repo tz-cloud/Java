@@ -19,11 +19,18 @@ class Main {
     for(int i = 0; i < array.length; i++){
       if(array[i] == num){
         return true;
-      }else{
-        return false;
       }
-    
+      return false;
   }
+
+  int checkLotto(int[]picks, int[]drawn){
+    int check = 0;
+    for(int i = 0; i < picks.length; i++){
+      if(isin(drawn, picks[i])){
+        check++;
+      }
+    }
+    return check;
   }
 
   void init(){
@@ -33,16 +40,6 @@ class Main {
     int[]test={1,2,3,4,5,6,7,8};
     print(isin(test, 1)); //true
 
-  }
-
-  int checkLotto(int[]picks, int[]drawn){
-    int check = 0;
-    for(int i = 0; i < picks.length; i++){
-      if(isin(picks, drawn[i])){
-        check++;
-      }
-    }
-    return check;
   }
 
   // Use these functions below for the activity
