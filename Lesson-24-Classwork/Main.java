@@ -18,7 +18,9 @@ class Main {
   String genPswd(){
     String pswd = "";
     for(int i = 0; i < 7; i++){
-      pswd += randInt(i, i);
+      int ascii = randInt(1, 127);
+      char ch = (char)ascii;
+      pswd += ch;
     }
     return pswd;
   }
@@ -27,6 +29,7 @@ class Main {
     print(toUpper("hello world"));
     //HELLO WORLD
     print(genPswd());
+    //random password
   }
 
 
