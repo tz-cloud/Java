@@ -45,10 +45,9 @@ class Main {
     }
     return bld;
   }
-
+  
   int randInt(int lower, int upper){
     int range = upper - lower;
     return (int)(Math.random()*range+lower);
   }
-
 }
