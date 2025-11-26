@@ -9,6 +9,8 @@ class Main {
 
     // Challenge1: Read in the file Original.txt and store it in a variable
     String msg = Input.readFile("Original.txt");
+    print(encode(msg));
+    print(decode(encode(msg)));
   }
 
    // Challenge2: 
@@ -43,6 +45,7 @@ class Main {
     }
     return bld;
   }
+
   int randInt(int lower, int upper){
     int range = upper - lower;
     return (int)(Math.random()*range+lower);
