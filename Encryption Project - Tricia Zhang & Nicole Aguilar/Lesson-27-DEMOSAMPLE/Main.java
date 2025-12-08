@@ -29,7 +29,7 @@ class Main {
 
     //swap 
     String encodedMsg1 = swap(file);
-    //Input.writeFile("Encode1.txt",encodedMsg1);
+    Input.writeFile("Encode1.txt",encodedMsg1);
 
     //caesar cipher
     //String encodedMsg2 = encode(encodedMsg1);
