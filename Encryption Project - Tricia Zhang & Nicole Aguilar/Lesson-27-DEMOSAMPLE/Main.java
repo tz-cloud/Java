@@ -28,7 +28,7 @@ class Main {
     String file = Input.readFile("test.txt");
 
     //swap 
-    //String encodedMsg1 = swap(file);
+    String encodedMsg1 = swap(file);
     //Input.writeFile("Encode1.txt",encodedMsg1);
 
     //caesar cipher
