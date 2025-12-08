@@ -27,16 +27,16 @@ class Main {
     // Encoding message
     String file = Input.readFile("test.txt");
 
-    //substituion
-    String encodedMsg1 = subEncryption(file,sub,sub2);
+    //swap 
+    String encodedMsg1 = swap(file);
     //Input.writeFile("Encode1.txt",encodedMsg1);
 
-    // caesar cipher
+    //caesar cipher
     String encodedMsg2 = encode(encodedMsg1);
     //Input.writeFile("Encode2.txt",encodedMsg2);
 
-    // reverse
-    String encodedMsg3 = swap(encodedMsg2);
+    //substitution
+    String encodedMsg3 = subEncryption(encodedMsg2, sub, sub2);
     Input.writeFile("Encode3.txt",encodedMsg3);
 
     
@@ -57,7 +57,12 @@ class Main {
   // Level 1: Swap every 3 characters
   String swap(String txt){
     String bld ="";
-    
+      for(int x = 0; x < txt.length(); x+=3){
+        String a = txt.substring(x, x+1);
+        String b = txt.substring(x+2, x+3);
+        String c = txt.substring(x+1, x+2);
+        bld += b + c + a;
+      }
     return bld;
   }
   
