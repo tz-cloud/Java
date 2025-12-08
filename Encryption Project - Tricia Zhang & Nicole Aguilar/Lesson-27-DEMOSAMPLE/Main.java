@@ -28,28 +28,28 @@ class Main {
     String file = Input.readFile("test.txt");
 
     //swap 
-    String encodedMsg1 = swap(file);
+    //String encodedMsg1 = swap(file);
     //Input.writeFile("Encode1.txt",encodedMsg1);
 
     //caesar cipher
-    String encodedMsg2 = encode(encodedMsg1);
+    //String encodedMsg2 = encode(encodedMsg1);
     //Input.writeFile("Encode2.txt",encodedMsg2);
 
     //substitution
-    String encodedMsg3 = subEncryption(encodedMsg2, sub, sub2);
-    Input.writeFile("Encode3.txt",encodedMsg3);
+    //String encodedMsg3 = subEncryption(encodedMsg2, sub, sub2);
+    //Input.writeFile("Encode3.txt",encodedMsg3);
 
     
     // decoding message
-    String file2 = Input.readFile("Encode1.txt");
+    //String file2 = Input.readFile("Encode1.txt");
     
-    String decodedMsg1 = swap(file2);
+    //String decodedMsg1 = swap(file2);
     //Input.writeFile("Decode1.txt", decodedMsg1);
     
-    String decodedMsg2 = decode(decodedMsg1);
+    //String decodedMsg2 = decode(decodedMsg1);
     //Input.writeFile("Decode2.txt", decodedMsg2);
     
-     String decodedMsg3 = subEncryption(decodedMsg2, sub2, sub);
+    //String decodedMsg3 = subEncryption(decodedMsg2, sub2, sub);
     //Input.writeFile("Decode1.txt", decodedMsg3);
     
     
