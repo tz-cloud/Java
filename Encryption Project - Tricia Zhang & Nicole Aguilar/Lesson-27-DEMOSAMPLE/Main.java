@@ -30,6 +30,7 @@ class Main {
     //swap 
     String encodedMsg1 = swap(file);
     Input.writeFile("Encode1.txt", encodedMsg1);
+    //idk why its not writing the encoded msg
 
     //caesar cipher
     //String encodedMsg2 = encode(encodedMsg1);
