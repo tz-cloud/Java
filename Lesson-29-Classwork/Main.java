@@ -7,11 +7,11 @@ class Main {
 
   void init(){
     Dog dog1 = new Dog("Poodle", 4, "Toto");
-    dog1.speak();
+    dog1.bark();
     Dog dog2 = new Dog("Pug", 5, "Snoopy");
-    dog2.speak();
+    dog2.bark();
     Dog dog3 = new Dog("Chihuahua", 6, "Poophy");
-    dog3.speak();
+    dog3.bark();
   }
 
   int randInt(int lower, int upper){

@@ -12,7 +12,7 @@ class Dog{
         this.name  = name;
     }
     //Class functions
-    void speak(){
+    void bark(){
         System.out.println("Bark!");
     }
 }
