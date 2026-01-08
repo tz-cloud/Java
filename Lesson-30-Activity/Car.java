@@ -17,7 +17,7 @@ class Car{
 
     //class function
     void honk(){
-        System.out.println("The brand of this car is " + brand + " ,the model is " + model + " and the value is " + value);
+        System.out.println("The brand of this car is " + brand + ", the model is " + model + " and the value is $" + value);
     }
 
 
