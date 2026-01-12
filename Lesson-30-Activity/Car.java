@@ -6,7 +6,7 @@ class Car{
     int year;
     double value;
 
-    //class constructor
+    //class constructor (is only called once, when "new" appears in main.java)
     Car(String brand, String color, String model, int year, double value){
         this.brand = brand;
         this.color = color;
