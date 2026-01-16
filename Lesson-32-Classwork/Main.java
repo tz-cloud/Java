@@ -19,9 +19,9 @@ class Main {
     Student s2 = new Student("Jerry", 11, 3.9, g2, courses2);
 
     s1.calculateAvg();
-    s1.checkCourse(courses1);
+    s1.checkCourse("HUF43X");
     s2.calculateAvg();
-    s2.checkCourse(courses2);
+    s2.checkCourse("EEFG7QH");
 
 
   }
