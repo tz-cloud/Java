@@ -30,10 +30,9 @@ class Student{
     for(int i = 0; i < this.courses.length; i++){
       if(courses[i].equals(course)){
         return true;
-      }else{
-        return false;
       }
     }
+    return false;
   }
 
   
