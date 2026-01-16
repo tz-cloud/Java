@@ -26,8 +26,8 @@ class Student{
     return sum/this.grades.length;
   }
 
-  boolean checkCourse(String[] courses){
-    if(courses.equals("HUF43X")){
+  boolean checkCourse(String course){
+    if(courses[i].equals(course)){
       return true;
     }else{
       return false;
