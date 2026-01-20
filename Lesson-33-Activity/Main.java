@@ -18,7 +18,7 @@ class Main {
 
     double subtotal = cart1.getItemPrice() + cart2.getItemPrice() + cart3.getItemPrice();
 
-    double plusTax = subtotal * 0.08675;
+    double plusTax = subtotal * 1.08675;
 
     print("Subtotal of all cartItems is $" + subtotal + ", and with tax, the total amount is $" + plusTax);
 
