@@ -8,19 +8,19 @@ class Main {
   void printt(Object o){System.out.print(o);}
 
   void init(){
-    CartItem cart1 = new CartItem("bread", 5.99, 25, false);
-    CartItem cart2 = new CartItem("laptop", 650.00 , 11, true);
-    CartItem cart3 = new CartItem("jacket", 85.50, 30, true);
+    CartItem cart1 = new CartItem("Bread", 5.99, 25, false);
+    CartItem cart2 = new CartItem("Laptop", 650.00 , 11, true);
+    CartItem cart3 = new CartItem("Jacket", 85.50, 30, true);
   
-    print("Item: " + cart1.itemName + "Price: $" + cart1.getItemPrice());
-    print("Item: " + cart2.itemName + "Price: $" + cart2.getItemPrice());
-    print("Item: " + cart3.itemName + "Price: $" + cart3.getItemPrice());
+    print("Item: " + cart1.itemName + ". Price: $" + cart1.getItemPrice());
+    print("Item: " + cart2.itemName + ". Price: $" + cart2.getItemPrice());
+    print("Item: " + cart3.itemName + ". Price: $" + cart3.getItemPrice());
 
     double subtotal = cart1.getItemPrice() + cart2.getItemPrice() + cart3.getItemPrice();
 
     double plusTax = subtotal * 0.08675;
 
-    print("Subtotal of all cartItems is $" + subtotal + " and with tax, the total amount is $" + plusTax);
+    print("Subtotal of all cartItems is $" + subtotal + ", and with tax, the total amount is $" + plusTax);
 
 
   }
