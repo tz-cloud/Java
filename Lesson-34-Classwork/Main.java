@@ -39,8 +39,8 @@ class Main {
       print(student.calculateAvg());
       if(student.calculateAvg() > 70){
         count++;
+        print(count);
       }
-      print(count);
     }
 
 
