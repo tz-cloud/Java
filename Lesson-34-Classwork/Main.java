@@ -35,7 +35,7 @@ class Main {
     // add your code here
     for(int x = 0; x <= studentList.length-1; x++){
       int count = 0;
-      Student student = student[x];
+      Student student = studentList[x];
       print(student.calculateAvg());
       if(student.calculateAvg() > 70){
         count++;
