@@ -10,6 +10,8 @@ class Main {
     CreateList list=new CreateList("CR101.csv");
     Student[] students = list.getStudentArray();
     
+    //PRINT ALL STUDENTS
+    print(list.length-1);
     
     
     
