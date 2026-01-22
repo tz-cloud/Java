@@ -45,7 +45,7 @@ class Main {
   for(int x = 0; x < students.length; x++){
     Student student = students[x];
     if(student.findCourseStartingWith("MK") && student.findTeacher("PORCHETTA")){
-      print student.id;
+      print(student.id);
     }
   }
 
