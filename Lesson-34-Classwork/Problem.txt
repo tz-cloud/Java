@@ -3,3 +3,5 @@ Display all the students averages
 
 Problem 2:
 Display how many students have an average above 70
+
+hi its me :)
