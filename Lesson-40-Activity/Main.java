@@ -22,6 +22,7 @@ class Main {
     String sql2 ="Select studentId From cr101;";
     String sql3 ="Select studentId,course, period From cr101 Where room In('322', '105', '106', '323') And Grade = '11';";
     String sql4 ="Select * From cr101 Where course LIKE 'M%' And course LIKE '%X';";
+
     Database db =  new  Database("jdbc:sqlite:students.db");	
 
     queryResult = db.runSQL(sql, "table-auto");
@@ -30,6 +31,7 @@ class Main {
     //there are 34,731 students
     queryResult = db.runSQL(sql3, "table-auto");
     queryResult = db.runSQL(sql4, "table-auto");
+    
     print(queryResult); 
 
     
