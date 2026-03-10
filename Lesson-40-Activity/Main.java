@@ -17,9 +17,9 @@ class Main {
   void init() {
    
     String queryResult="";
-    String sql ="Select * From cr101 Where teacher1 = 'BANU';";
+    String sql ="Select * From students Where teacher1 = 'BANU';";
 
-    Database db =  new  Database("jdbc:sqlite:cr101.db");	
+    Database db =  new  Database("jdbc:sqlite:students.db");	
 
     queryResult = db.runSQL(sql, "table-auto");
     print(queryResult); 
