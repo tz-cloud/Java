@@ -13,7 +13,7 @@ Retrieve all the students' information that have "PORCHETTA" as a teacher during
 Hint: Using teacher1 field name
 
 Challenge 4:
-Retrieve the student id for each student. How many students are there?
+Retrieve the student id for each student. How many students are there? 
 
 Challenge 5:
 Retrieve the student id, course, and period for each student that have a class in the following rooms: 322, 105, 106, 323 that are juniors.
