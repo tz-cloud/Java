@@ -18,9 +18,15 @@ class Main {
 
       String queryResult="";
       String sql = "";
+      String sql1 = "";
 
       sql = "INSERT INTO cr101(course, section, period, teacher1, room) VALUES ('MCLUB1', 3, 1, 'WHOKNOWS', 'ROOFTOP';) WHERE STUDENTID = 'STUDENT2';";
+      sql1 = "INSERT INTO cr101(course, section, period, teacher1, room) VALUES ('CN100', 1, 2, 'PORCHETTA', '108';) WHERE STUDENTID = 'STUDENT4';";
 		  Database   db =  new  Database("jdbc:sqlite:students.db");	
+
+      queryResult = db.runSQL(sql, "table-auto");
+      queryResult = db.runSQL(sql1, "table-auto");
+      print(queryResult); 
 
 
       
