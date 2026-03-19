@@ -16,9 +16,9 @@ class Main {
   void init() {
 
     String result="";
-    String sql = "SELECT albums.title FROM albums INNER JOIN artists ON albums.ArtistId = artists.ArtistId limit 20;";
-    String sql1 ="SELECT tracks.name FROM tracks INNER JOIN genres ON tracks.genreld = genres.genreld WHERE genres.genreld IN('Blues', 'Latin', 'Pop', 'Classical') limit 20;";
-    String sql2 = "SELECT tracks.name FROM tracks INNER JOIN playlist_track ON tracks.TrackId = playlist_track.TrackId INNER JOIN playlists ON playlist_track.PlaylistId = playlists.PlaylistId WHERE playlist.name = 'Grunge' limit 20;";
+    String sql = "SELECT albums.title FROM albums INNER JOIN artists ON albums.ArtistId = artists.ArtistId Limit 20;";
+    String sql1 ="SELECT tracks.name FROM tracks INNER JOIN genres ON tracks.genreld = genres.genreld WHERE genres.genreld IN('Blues', 'Latin', 'Pop', 'Classical') Limit 20;";
+    String sql2 = "SELECT tracks.name FROM tracks INNER JOIN playlist_track ON tracks.TrackId = playlist_track.TrackId INNER JOIN playlists ON playlist_track.PlaylistId = playlists.PlaylistId WHERE playlist.name = 'Grunge' Limit 20;";
      
 		Database db = new Database("jdbc:sqlite:chinook.db" );	
     result = db.runSQL(sql, "table-auto");
