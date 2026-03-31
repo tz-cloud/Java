@@ -36,7 +36,7 @@ class Main {
    server.createContext("/", new RouteHandler("You are connected, but route not given or incorrect") );
 
    String sql = "";
-   sql  = " Select * from customer";
+   sql  = " Select * from customers";
    server.createContext("/customers", new RouteHandler(db,sql) );
 
    sql  = " Select * from employees";
