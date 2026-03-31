@@ -35,21 +35,20 @@ class Main {
    // Add your  code here
    server.createContext("/", new RouteHandler("You are connected, but route not given or incorrect") );
 
-   String sql = "";
-   sql  = " Select * from customers";
+   String sql = " Select * from Customer";
    server.createContext("/customers", new RouteHandler(db,sql) );
 
-   sql  = " Select * from employees";
-   server.createContext("/employees", new RouteHandler(db,sql) );
+   String sql1  = " Select * from employees";
+   server.createContext("/employees", new RouteHandler(db,sql1) );
 
-   sql = "Select";
-   sql += "";
-   sql += "Limit 10";
-   server.createContext("/albumsinfo", new RouteHandler(db,sql) );
+   String sql3 = "Select";
+   sql3 += "";
+   sql3 += "Limit 10";
+   server.createContext("/albumsinfo", new RouteHandler(db,sql3) );
 
-   String sql1 = " Select customers.FirstName, customers.LastName, tracks.name, invoices.invoiceDate from customers ";
-   sql += "";
-   server.createContext("/customersongs", new RouteHandler(db,sql1) );
+   String sql4 = " Select customers.FirstName, customers.LastName, tracks.name, invoices.invoiceDate from customers ";
+   sql4 += "";
+   server.createContext("/customersongs", new RouteHandler(db,sql4) );
 
     //Start the server
     server.start();
