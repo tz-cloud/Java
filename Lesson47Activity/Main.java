@@ -41,14 +41,18 @@ class Main {
    String sql1  = " Select * from employees";
    server.createContext("/employees", new RouteHandler(db,sql1) );
 
-   String sql3 = "Select";
-   sql3 += "";
-   sql3 += "Limit 10";
-   server.createContext("/albumsinfo", new RouteHandler(db,sql3) );
+   String sql2 = "Select * From tracks, * From artists";
+   sql2 += "Inner Join albums On artists.artistsId = albums.artistsId";
+   sql2 += "Inner Join tracks On albums.albumId = tracks.albumId";
+   sql2 += "Limit 10";
+   server.createContext("/albumsinfo", new RouteHandler(db,sql2) );
 
-   String sql4 = " Select customers.FirstName, customers.LastName, tracks.name, invoices.invoiceDate from customers ";
-   sql4 += "";
-   server.createContext("/customersongs", new RouteHandler(db,sql4) );
+   String sql3 = "Select customers.FirstName, customers.LastName, tracks.name, invoices.invoiceDate from customers ";
+   sql3 += "Inner Join invoices On customers.customerId = invoices.customerId";
+   sql3 += "Inner Join invoice_items On invoices.invoiceId = invoice_items.invoiceId";
+   sql3 += "Inner Join tracks On invoice_items.trackId = tracks.trackId";
+   sql3 += "Limit 10";
+   server.createContext("/customersongs", new RouteHandler(db,sql3) );
 
     //Start the server
     server.start();
