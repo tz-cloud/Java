@@ -1,12 +1,6 @@
-import com.sun.net.httpserver.HttpContext;
-import com.sun.net.httpserver.HttpExchange;
-import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 import java.io.IOException;
-import java.sql.*;
-
 import java.net.InetSocketAddress;
-import java.util.Map;
 
 //For compiling on the shell on repl: Same on mac
 //javac -cp sqlite-jdbc-3.23.1.jar: Main.java
@@ -40,7 +34,11 @@ class Main {
     
     server.createContext("/", new RouteHandler("You are connected, but route not given or incorrect....") );
 
-  
+    String sql  = " Select tracks.Name, albums.Title, artists.Name ";
+    sql += " From tracks";
+    sql += " Inner Join albums ON tracks.AlbumId = albums.AlbumId";
+    sql += " Inner Join artists ON albums.ArtistId = artists.ArtistId";
+    server.createContext("/customer/albums/artists", new RouteHandler(db,sql) );
     //Start the server
     server.start();
 
