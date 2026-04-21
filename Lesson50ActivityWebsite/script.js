@@ -17,15 +17,15 @@ function generateCards(songs){
 
 	for(let x = 0; x < songs.length; x++){
 		let song = songs[x];
-		bld += `<div>`;
-		bld += `<h3> Song Name </h3>`;
-		bld += `<p> ${song.Name} </p>`;
-		bld += `<h2> Album </h2>`;
-		bld += `<p> ${song.Title} </p>`;
-		bld += `<h2> Composer </h2>`;
-		bld += `<p> ${song.Composer} </p>`;
-		bld += `<hr>`;
-		bld += `</div>`;
+		bld += `<div class="card" >`;
+    	bld += `<h3> Song Name </h3>`;
+    	bld += `<p> ${song.Name}</p>`;
+    	bld += `<div> Album </div>`;
+    	bld += `<h2> ${song.Title} </h2>`;
+    	bld += `<div> Composer </div>`;
+    	bld += `<h2> ${song.Composer}</h2>`;
+    	bld += `<hr>`;
+    	bld += `</div>`;
 	}
 	output.innerHTML = bld;
 }

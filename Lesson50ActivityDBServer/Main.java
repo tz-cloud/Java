@@ -37,6 +37,7 @@ class Main {
     String sql  = "Select * From tracks";
     sql += " Inner Join albums ON albums.AlbumId = tracks.AlbumId";
     sql += " Inner Join artists ON albums.ArtistId = artists.ArtistId";
+    sql += "LIMIT 10";
     server.createContext("/songs", new RouteHandler(db,sql) );
     //Start the server
     server.start();
