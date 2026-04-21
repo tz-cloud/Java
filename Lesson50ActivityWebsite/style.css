@@ -73,5 +73,11 @@ nav a:hover{
   
 }
 #output{
-
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: skyblue;
+  margin:5px;
+  padding:5px;
 }

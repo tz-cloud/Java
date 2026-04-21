@@ -30,15 +30,14 @@ class Main {
     // create the database object
     Database db = new Database("jdbc:sqlite:chinook.db");
     
-   // Add your  code here
+   // Add your code here
     
     server.createContext("/", new RouteHandler("You are connected, but route not given or incorrect....") );
 
-    String sql  = " Select tracks.Name, albums.Title, artists.Name ";
-    sql += " From tracks";
-    sql += " Inner Join albums ON tracks.AlbumId = albums.AlbumId";
+    String sql  = "Select * From tracks";
+    sql += " Inner Join albums ON albums.AlbumId = tracks.AlbumId";
     sql += " Inner Join artists ON albums.ArtistId = artists.ArtistId";
-    server.createContext("/customer/albums/artists", new RouteHandler(db,sql) );
+    server.createContext("/songs", new RouteHandler(db,sql) );
     //Start the server
     server.start();
 
