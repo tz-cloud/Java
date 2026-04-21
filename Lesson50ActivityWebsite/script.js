@@ -18,12 +18,12 @@ function generateCards(songs){
 	for(let x = 0; x < songs.length; x++){
 		let song = songs[x];
 		bld += `<div class="card" >`;
-    	bld += `<h3> Song Name </h3>`;
+    	bld += `<h2> Song Name </h2>`;
     	bld += `<p> ${song.Name}</p>`;
     	bld += `<div> Album </div>`;
-    	bld += `<h2> ${song.Title} </h2>`;
+    	bld += `<p> ${song.Title} </p>`;
     	bld += `<div> Composer </div>`;
-    	bld += `<h2> ${song.Composer}</h2>`;
+    	bld += `<p> ${song.Composer}</p>`;
     	bld += `<hr>`;
     	bld += `</div>`;
 	}
