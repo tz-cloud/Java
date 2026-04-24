@@ -3,7 +3,7 @@ let employees;
 function init(){
   $.ajaxSetup({async: false});
   
-  let link = "https://Lesson48ClassworkDBServer.ernestoporchett.repl.co";
+  let link = "https://opulent-memory-g479qpvjg4vrfwq59-8500.app.github.dev";
   let route= "/employees"
   employees = $.getJSON(link+route).responseJSON;
 
