@@ -1,12 +1,6 @@
-import com.sun.net.httpserver.HttpContext;
-import com.sun.net.httpserver.HttpExchange;
-import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 import java.io.IOException;
-import java.sql.*;
-
 import java.net.InetSocketAddress;
-import java.util.Map;
 
 //For compiling on the shell on repl: Same on mac
 //javac -cp sqlite-jdbc-3.23.1.jar: Main.java
@@ -52,6 +46,8 @@ class Main {
     sql += " Inner Join invoices ON customers.customerid=invoices.customerid ";
     server.createContext("/customer/invoices", new RouteHandler(db,sql) );
 
+    sql  = " Select * from employees ";
+    server.createContext("/employees", new RouteHandler(db,sql) );
       
     //Start the server
     server.start();
