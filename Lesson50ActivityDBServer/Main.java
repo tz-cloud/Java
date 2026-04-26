@@ -38,6 +38,9 @@ class Main {
     sql += " Inner Join albums ON albums.AlbumId = tracks.AlbumId";
     sql += " Inner Join artists ON albums.ArtistId = artists.ArtistId";
     server.createContext("/songs", new RouteHandler(db,sql) );
+
+    sql  = "Select * From employees";
+    server.createContext("/employees", new RouteHandler(db,sql) );
     //Start the server
     server.start();
 
