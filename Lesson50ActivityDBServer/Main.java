@@ -41,6 +41,9 @@ class Main {
 
     sql  = "Select * From employees";
     server.createContext("/employees", new RouteHandler(db,sql) );
+
+    sql  = "Select * From customers";
+    server.createContext("/customers", new RouteHandler(db,sql) );
     //Start the server
     server.start();
 
