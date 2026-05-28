@@ -1,56 +1,60 @@
+let employees, info;
 
-let employees;
 async function init(){
-  
-  let link = "https://raw.githubusercontent.com/PorchettaEP/JSONFILES/refs/heads/main";
-  let route= "/employees"
+  let link = "https://ubiquitous-guacamole-wvrrvgg65qpf9j59-8500.app.github.dev"; //replace with your Dev URL
+  let route= "/employees";
 
-  let info = await fetch(link+route);
+  info = await fetch(link+route);
   employees = await info.json();
 
   generateCards(employees);
 }
 
-function generateCards(){
-  window.onload = function (){  
+function generateCards(employees){
+  // Display info as a Modal
+  let mainpanel = document.getElementById("centerpanel");
+  mainpanel.innerHTML = ""; //clear out the container
 
-  let back="";
-  let front="";
-  
+  // initialize strings for modal text and HTML content
+  let text ="";
+  let content ="";
+   
   for(let i=0; i<employees.length; i++){
-    let employee = employees[i];
-
-    front = `<h2>${employee.EmployeeId}</h2>`;
-    front+= `<h2>${employee.FirstName}</h2>`;
-    front+= `<h2>${employee.LastName}</h2>`;
-    front+= `<p>${employee.Email}</p>`;
-
-    back = `${employee.City}`
-    back+= `<img src='cities${employee.City}.PNG'>`;
-    back+= `<hr>`;
-
-    card = new FlipCard(front,back);
-    card.render("mainpanel");
-      }
-
-    }
-  }
+    let employee = employees[i]
+    // create HTML for Modal text
+    text  = `<div class="card" >`
+    text += `<h3> Employee ID : ${employee.EmployeeId}</h3>`;
+    text += `<div> First Name : ${employee.FirstName}</div>`;
+    text += `<div> Last Name : ${employee.LastName}</div>`;
+    text += `<hr>`;
+    text += `</div>`;
+    // create HTML for Modal content
+    content  = `<div class="card" >`
+    content += `<p> City : ${employee.City}</p>`;
+    content += `<img src="cities/${employee.City}.PNG">`;
+    content += `<hr>`;
+    content += `</div>`;
+     // create Modal object while passing text & content
+    let modal = new Modal(text,content);
+    modal.render("centerpanel"); // render Modal in container
+  }  
+}
 
 function filter(){
   let city = document.getElementById("city").value;
   console.log(city);
 
-  let newEmployees = []; //create a list of songs searched for
+  let newEmployees = []; //create a list to add employees to
   
   for(let i=0; i<employees.length;i++){
-    let employee = employees[i] //get each sog
-    //make sure the list is no
+    let employee = employees[i] //get each employee
+    
     if( employee.City == city ) {
-          //add to the new list
+          //add to the list
           newEmployees.push(employee);
-       }
+    }
   }
-  console.log(`number found ${newEmployees.length}`)
-  generateCards(newEmployees);
   
+  console.log(`number found ${newEmployees.length}`)
+  generateCards(newEmployees);  
 }
